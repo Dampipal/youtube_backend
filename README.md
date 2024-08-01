@@ -1,33 +1,47 @@
-```create models file stucture```
+# YouTube Backend
 
-#FOLDER STUCTURE
-youtube_backed/
-| -models/
-| | -channel/
-| | |-- channelModel.js
-| | -comment/
-| | |-- commentModel.js
-| | |-- recommentModel.js
-| | -hashtag/
-| | |-- hashtagModel.js
-| | -history/
-| | |-- historyModel.js
-| | |-- savedModel.js
-| | -like/
-| | |-- dislikeModel.js
-| | |-- likeModel.js
-| | -mention/
-| | |-- mentionModel.js
-| | -notification/
-| | |-- notificationModel.js
-| | -playlist/
-| | |-- playlistModel.js
-| | -shere/
-| | |-- shereModel.js
-| | -subscribe/
-| | |-- subscribeModel.js
-| | -user/
-| | |-- userModel.js
-| | -video/
-| | |-- videoModel.js
+Welcome to the **YouTube Backend** project! This repository contains the backend code for a YouTube-like application. Below is an overview of the folder structure and its contents.
 
+## Folder Structure
+
+- `models/`: Contains the Mongoose models for various entities in the application.
+  - `channel/`: Models related to channels.
+    - `channelModel.js`: Defines the schema and model for channels.
+  - `comment/`: Models related to comments and replies.
+    - `commentModel.js`: Defines the schema and model for comments.
+    - `recommentModel.js`: Defines the schema and model for replies to comments.
+  - `hashtag/`: Models related to hashtags.
+    - `hashtagModel.js`: Defines the schema and model for hashtags.
+  - `history/`: Models related to user history.
+    - `historyModel.js`: Defines the schema and model for user history.
+    - `savedModel.js`: Defines the schema and model for saved items.
+  - `like/`: Models related to likes and dislikes.
+    - `likeModel.js`: Defines the schema and model for likes.
+    - `dislikeModel.js`: Defines the schema and model for dislikes.
+  - `mention/`: Models related to mentions.
+    - `mentionModel.js`: Defines the schema and model for mentions.
+  - `notification/`: Models related to notifications.
+    - `notificationModel.js`: Defines the schema and model for notifications.
+  - `playlist/`: Models related to playlists.
+    - `playlistModel.js`: Defines the schema and model for playlists.
+  - `shere/`: Models related to shares.
+    - `shereModel.js`: Defines the schema and model for shares.
+  - `subscribe/`: Models related to subscriptions.
+    - `subscribeModel.js`: Defines the schema and model for subscriptions.
+  - `user/`: Models related to users.
+    - `userModel.js`: Defines the schema and model for users.
+  - `video/`: Models related to videos.
+    - `videoModel.js`: Defines the schema and model for videos.
+
+- `routes/`: Contains the route handlers for the application.
+  - `index.js`: Entry point for defining and exporting all routes.
+
+- `package.json`: Contains project metadata and dependencies.
+
+- `.env`: Contains environment variables required for the application.
+
+## Getting Started
+
+1. **Clone the Repository**
+   ```bash
+   git clone <repository-url>

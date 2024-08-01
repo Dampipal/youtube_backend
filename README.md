@@ -44,4 +44,10 @@ Welcome to the **YouTube Backend** project! This repository contains the backend
 
 1. **Clone the Repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/Dampipal/youtube_backend.git
+2. **Install Node Pkg**
+   ```bash
+   npm i
+1. **Run**
+   ```bash
+   npm start

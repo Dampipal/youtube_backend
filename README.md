@@ -51,3 +51,32 @@ Welcome to the **YouTube Backend** project! This repository contains the backend
 1. **Run**
    ```bash
    npm start
+## Basic HTML Boilerplate
+
+The `index.html` file contains the basic HTML boilerplate code. Here is an example:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    
+    <main>
+        <p>This is a basic HTML boilerplate.</p>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

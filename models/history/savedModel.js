@@ -1,8 +1,8 @@
 const mongoose = require("mongoose");
-const User = require("../user/userModel");
 const Video = require("../video/videoModel");
+const User = require("../user/userModel");
 
-const historySchema = new mongoose.Schema(
+const savedSchema = new mongoose.Schema(
   {
     user: [
       {
@@ -16,12 +16,12 @@ const historySchema = new mongoose.Schema(
         ref: Video,
       },
     ],
-    watchedAt: {
+    savedAt: {
       type: timestamps,
     },
   },
-  { timestamps: true }
+  { timestamp: true }
 );
 
-const History = mongoose.model("History", historySchema);
-module.exports = History;
+const Saved = mongoose.model("Saved", savedSchema);
+module.exports = Saved;

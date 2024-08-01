@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 const User = require("../user/userModel");
-const Video = require("../video/videoModel");
 const Like = require("../like/likeModel");
 const Dislike = require("../like/dislikeModel");
 
-const commentSchema = new mongoose.Schema(
+const recommentSchema = new mongoose.Schema(
   {
     content: {
       type: String,
@@ -15,10 +14,10 @@ const commentSchema = new mongoose.Schema(
         ref: User,
       },
     ],
-    video: [
+    comment: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: Video,
+        ref: Comment,
       },
     ],
     like: [
@@ -33,12 +32,12 @@ const commentSchema = new mongoose.Schema(
         ref: Dislike,
       },
     ],
-    postedAt: {
-      type: timestamp,
+    postedAT: {
+      type: timestamps,
     },
   },
-  { timestamp: true }
+  { timestamps: true }
 );
 
-const Comment = mongoose.model("Comment", commentSchema);
-module.exports = Comment;
+const Recomment = mongoose.model("Recomment", recommentSchema);
+module.exports = Recomment;

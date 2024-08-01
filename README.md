@@ -93,6 +93,7 @@ const channelSchema = new mongoose.Schema(
 const Channel = mongoose.model("Channel", channelSchema);
 module.exports = Channel;
 
+## Models Complete Code
 The `models/comment/commentModel.js` file contains code. Here is:
 
 ```javascript
@@ -141,6 +142,7 @@ const commentSchema = new mongoose.Schema(
 const Comment = mongoose.model("Comment", commentSchema);
 module.exports = Comment;
 
+## Models Complete Code
 The `models/channel/recommentModel.js` file contains code. Here is:
 
 ```javascript
